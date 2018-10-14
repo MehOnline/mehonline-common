@@ -1,6 +1,6 @@
 import { GameAction } from '../main/action.types';
 
-export enum InboundMessageType {
+export enum InboundMessageTypes {
   Login = "login",
 
   MapRequestMapInfo = "requestMapInfo",
@@ -12,5 +12,8 @@ export enum InboundMessageType {
 }
 
 export interface InboundMessage extends GameAction {
-  type: InboundMessageType
+  type: InboundMessageTypes,
+  payload: InboundMessagePayload
 }
+
+export interface InboundMessagePayload {}

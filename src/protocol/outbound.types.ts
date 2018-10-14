@@ -1,6 +1,6 @@
 import { GameAction } from '../main/action.types';
 
-export enum OutboundMessageType {
+export enum OutboundMessageTypes {
   ClientError = "clientError",
 
   MapPlayerInfo = "playerInfo",
@@ -16,7 +16,7 @@ export enum OutboundMessageType {
 }
 
 export interface OutboundMessage extends GameAction {
-  type: OutboundMessageType,
+  type: OutboundMessageTypes,
   payload: OutboundMessagePayload
 }
 
