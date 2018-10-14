@@ -1,0 +1,21 @@
+{
+  "name": "mehonline-reducers",
+  "version": "0.0.1",
+  "description": "Action Reducers for MehOnline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --version && tsc --watch false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/thisshitgame/mehonline-reducers.git"
+  },
+  "author": "Coding Donuts",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/thisshitgame/mehonline-reducers#readme",
+  "devDependencies": {
+    "@types/node": "^9.6.6",
+    "typescript": "^2.8.3"
+  }
+}
