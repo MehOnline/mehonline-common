@@ -4,13 +4,9 @@
     "moduleResolution": "node",
     "target": "es6",
     "esModuleInterop": true,
-    "allowJs": true,
+    "removeComments": true,
     "sourceMap": true,
-    "emitDecoratorMetadata": true, 
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "strictNullChecks": false,
+    "outDir": "dist"
   },
-  "baseUrl": ".",
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules"]
 }

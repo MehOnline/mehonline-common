@@ -2,22 +2,20 @@
   "name": "mehonline-reducers",
   "version": "0.0.1",
   "description": "Action Reducers for MehOnline",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc --version && tsc --watch false",
-    "postinstall": "npm run tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/thisshitgame/mehonline-reducers.git"
+    "clean": "rimraf ./dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Coding Donuts",
   "license": "ISC",
   "homepage": "https://bitbucket.org/thisshitgame/mehonline-reducers#readme",
   "devDependencies": {
-    "@types/node": "^9.6.6",
-    "typescript": "^2.8.3"
+    "@types/node": "^10.12.0",
+    "rimraf": "^2.6.2",
+    "typescript": "^3.1.3"
   },
   "dependencies": {
     "rxjs": "6.3.3"
