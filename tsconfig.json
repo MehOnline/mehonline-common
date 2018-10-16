@@ -6,8 +6,11 @@
     "esModuleInterop": true,
     "allowJs": true,
     "sourceMap": true,
-    "outDir": "dist"
+    "emitDecoratorMetadata": true, 
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false,
   },
-  "include": ["./src/**/*"],
+  "baseUrl": "./src",
   "exclude": ["node_modules"],
 }
