@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc --version && tsc --watch false"
+    "tsc": "tsc --version && tsc --watch false",
+    "postinstall": "npm run tsc"
   },
   "repository": {
     "type": "git",
