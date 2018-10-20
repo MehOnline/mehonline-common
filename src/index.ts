@@ -1,3 +1,3 @@
-export * from './protocol/inbound.types';
-export * from './protocol/outbound.types';
-export * from './main/action.types';
+export * from './protocol/inbound.types.js';
+export * from './protocol/outbound.types.js';
+export * from './main/action.types.js';
