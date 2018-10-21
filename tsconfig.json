@@ -5,7 +5,8 @@
     "target": "es6",
     "esModuleInterop": true,
     "removeComments": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "outDir": "dist"
   },
   "exclude": ["node_modules"]
 }

@@ -3,5 +3,4 @@ node_modules/
 *.log
 .DS_Store
 .vscode
-.js
-.js.map
+dist
