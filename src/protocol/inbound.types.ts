@@ -1,4 +1,4 @@
-import { GameAction } from '../main/action.types';
+import { GameAction } from '../state/mehonline.actions';
 
 export enum InboundMessageTypes {
   Login = "login",
