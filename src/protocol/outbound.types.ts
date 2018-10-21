@@ -1,4 +1,4 @@
-import { GameAction } from '../main/action.types';
+import { GameAction } from "../main/action.types";
 
 export enum OutboundMessageTypes {
   ClientError = "clientError",
@@ -12,12 +12,14 @@ export enum OutboundMessageTypes {
 
   ChatNewServerMessage = "chat:newServerMessage",
   ChatNewPrivateMessage = "chat:newPrivateMessage",
-  ChatNewMessage = "chat:newMessage"
+  ChatNewMessage = "chat:newMessage",
+
+  InvInventoryUpdated = "inv:inventoryUpdated"
 }
 
 export interface OutboundMessage extends GameAction {
-  type: OutboundMessageTypes,
-  payload: OutboundMessagePayload
+  type: OutboundMessageTypes;
+  payload: OutboundMessagePayload;
 }
 
 export interface OutboundMessagePayload {}
