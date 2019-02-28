@@ -8,7 +8,7 @@
     "postinstall": "npm run build"
   },
   "author": "Coding Donuts",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "homepage": "https://github.com/MehOnline/mehonline-common",
   "devDependencies": {
     "@types/node": "^10.12.18",
