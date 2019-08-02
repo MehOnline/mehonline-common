@@ -2,6 +2,7 @@
   "name": "mehonline-common",
   "version": "0.1.0",
   "description": "Common dependencies for MehOnline",
+  "private": true,
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc --version && tsc --watch false",
@@ -19,7 +20,6 @@
   "release-it": {
     "git": {
       "tagName": "v${version}"
-    },
-    "npm": false
+    }
   }
 }
