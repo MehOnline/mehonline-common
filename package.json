@@ -5,13 +5,20 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc --version && tsc --watch false",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "release": "release-it"
   },
   "author": "Coding Donuts",
   "license": "MIT",
   "homepage": "https://github.com/MehOnline/mehonline-common",
   "devDependencies": {
-    "@types/node": "^10.12.18",
-    "typescript": "^3.2.4"
+    "@types/node": "^12.6.9",
+    "release-it": "^12.3.5",
+    "typescript": "^3.5.3"
+  },
+  "release-it": {
+    "git": {
+      "tagName": "v${version}"
+    }
   }
 }
