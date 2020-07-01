@@ -1,6 +1,6 @@
 {
   "name": "mehonline-common",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Common dependencies for MehOnline",
   "private": true,
   "main": "./dist/index.js",
