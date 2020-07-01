@@ -17,7 +17,7 @@ export enum InboundMessageTypes {
   InvListItems = "inv:listItems",
   InvMoveItem = "inv:moveItem",
   InvDropItem = "inv:dropItem",
-  InvEquipItem = "inv:equipItem"
+  InvEquipItem = "inv:equipItem",
 }
 
 export interface InboundMessage extends GameAction {
@@ -25,4 +25,9 @@ export interface InboundMessage extends GameAction {
   payload: InboundMessagePayload;
 }
 
-export interface InboundMessagePayload {}
+export interface InboundMessagePayload {
+  x: number;
+  y: number;
+  direction: string;
+  motion: string;
+}

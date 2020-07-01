@@ -14,7 +14,7 @@ export enum OutboundMessageTypes {
   ChatNewPrivateMessage = "chat:newPrivateMessage",
   ChatNewMessage = "chat:newMessage",
 
-  InvInventoryUpdated = "inv:inventoryUpdated"
+  InvInventoryUpdated = "inv:inventoryUpdated",
 }
 
 export interface OutboundMessage extends GameAction {
@@ -22,4 +22,26 @@ export interface OutboundMessage extends GameAction {
   payload: OutboundMessagePayload;
 }
 
-export interface OutboundMessagePayload {}
+export interface OutboundMessagePayload {
+  id: number;
+  x: number;
+  y: number;
+  direction: string;
+  motion: string;
+
+  enemyType?: string;
+
+  map?: string;
+  hp?: number;
+  maxHp?: number;
+  mp?: number;
+  maxMp?: number;
+  lvl?: number;
+  exp?: number;
+  expToNextLvl?: number;
+
+  attributePoints?: number;
+  strength?: number;
+  intellect?: number;
+  agility?: number;
+}
