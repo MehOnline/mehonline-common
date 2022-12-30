@@ -14,7 +14,7 @@
   "homepage": "https://github.com/MehOnline/mehonline-common",
   "devDependencies": {
     "@types/node": "^14.0.14",
-    "release-it": "^13.6.4",
+    "release-it": "^13.7.2",
     "typescript": "^3.9.5"
   },
   "release-it": {
